@@ -5,7 +5,6 @@ $(function () {
         .on("child_added", function(snapshot) {
         
         let currentEmp = snapshot.val();
-        console.log(currentEmp);
         
         var newRow = $("<tr class='tableRow'>");
         var currentName = $("<td class='name'>").text(currentEmp.name);
@@ -23,6 +22,7 @@ $(function () {
             .append(currentBill);
         
         $("tbody").append(newRow);
+        // dynamically creates new table rows with employee data
         
         })
         
