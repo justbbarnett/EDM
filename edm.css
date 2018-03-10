@@ -1,4 +1,13 @@
+.edm-jumbo {
+    background-color: navy;
+    color: white;
+}
 
 .employee-cards {
     margin-bottom: 5px;
+}
+
+.card-header {
+    background-color: navy;
+    color:white;
 }
