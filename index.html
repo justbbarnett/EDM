@@ -9,63 +9,88 @@
     <title>Employee Data Management</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="edm.css">
 
 </head>
 
 <body>
-    <div class="jumbotron">
-        <h1 class="display-4">Employee Data Management</h1>
-    </div>
-    <div class="employee-schedule">
-        <div class="card">
-            <div class="card-body">
-                <table class="table">
-                    <thead class="thead-dark">
-                        <tr>
-                            <th scope="col">Employee Name</th>
-                            <th scope="col">Role</th>
-                            <th scope="col">Start Date</th>
-                            <th scope="col">Months Worked</th>
-                            <th scope="col">Monthly Rate ($)</th>
-                            <th scope="col">Total Billed ($)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="tableRow">
-                            <td class="name"></td>
-                            <td class="role"></td>
-                            <td class="start"></td>
-                            <td class="months"></td>
-                            <td class="rate"></td>
-                            <td class="billed"></td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="container">  
+        <div class="jumbotron">
+            <h1 class="text-center"><strong>Employee Data Management</strong></h1>
+                <hr>
+                <h4 class="text-center">Employee Rates</h4>
+        </div>
+
+        <div class="row employee-schedule">
+            <div class="col-12 employee-cards">
+                <div class="card">
+                    <div class="card-header">
+                        Employees
+                    </div>
+                    <div class="card-body">
+                        <div class="employee-results">
+                            <table class="table">
+                                <thead class="thead">
+                                    <tr>
+                                        <th scope="col">Employee Name</th>
+                                        <th scope="col">Role</th>
+                                        <th scope="col">Start Date</th>
+                                        <th scope="col">Months Worked</th>
+                                        <th scope="col">Monthly Rate ($)</th>
+                                        <th scope="col">Total Billed ($)</th>
+                                    </tr>
+                                </hr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tableRow">
+                                        <td class="name"></td>
+                                        <td class="role"></td>
+                                        <td class="start"></td>
+                                        <td class="months"></td>
+                                        <td class="rate"></td>
+                                        <td class="billed"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-    </div>
-    <div class="add-employee">
-        <div class="card">
-            <div class="card-title">
-                <h4>Add Employee</h4>
-            </div>
-            <div class="card-body">
-                <form>
-                    <label for="employee-name">Employee Name: </label>
-                    <input type="text" id="employee-name" placeholder="name"> <br>
-                    <label for="employee-role">Role: </label>
-                    <input type="text" id="employee-role" placeholder="role"> <br>
-                    <label for="start-date">Start Date: </label>
-                    <input type="text" id="start-date" placeholder="DD/MM/YY"> <br>
-                    <label for="employee-rate">Monthly Rate:</label>
-                    <input type="text" id="employee-rate" placeholder="rate"> <br>
-                    <button class="btn btn-primary" id="add-employee-button">Submit</button>
-                </form>
+        <div class="row">
+            <div class="col-12 add-employee">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Add Employee</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="train-schedule">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Employee Name</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Employee Role</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Start Date (DD/MM/YY) - ex: 01/01/89</label>
+                                <input type="date" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Monthly Rate</label>
+                                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            
+                                    
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 
 <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
