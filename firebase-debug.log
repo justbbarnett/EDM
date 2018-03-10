@@ -1,0 +1,42 @@
+[debug] [2018-03-10T17:43:12.183Z] ----------------------------------------------------------------------
+[debug] [2018-03-10T17:43:12.183Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Molly\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-03-10T17:43:12.183Z] CLI Version:   3.17.5
+[debug] [2018-03-10T17:43:12.183Z] Platform:      win32
+[debug] [2018-03-10T17:43:12.183Z] Node Version:  v8.9.4
+[debug] [2018-03-10T17:43:12.183Z] Time:          Sat Mar 10 2018 11:43:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:12.183Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-03-10T17:43:12.215Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-03-10T17:43:12.215Z] > authorizing via signed-in user
+[debug] [2018-03-10T17:43:12.215Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-03-10T17:43:12.215Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/_iMe-JJfs71qUz2b7k06-P2TpgEHvPUyZTtR8kXabAA',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Mar 10 2018 11:43:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:12.465Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T17:43:12.465Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/edm-project-mar-10  
+  
+ Sat Mar 10 2018 11:43:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:12.817Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T17:43:12.817Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/edm-project-mar-10/tokens  
+  
+ Sat Mar 10 2018 11:43:12 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:13.255Z] <<< HTTP RESPONSE 200
+[debug] [2018-03-10T17:43:13.255Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/edm-project-mar-10  
+  
+ Sat Mar 10 2018 11:43:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:13.426Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Molly\Desktop\Code\week_7\mar-10\EDM'...
+[info] 
+[debug] [2018-03-10T17:43:13.442Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/63184278874/clients/_:getWebAppConfig  
+  
+ Sat Mar 10 2018 11:43:13 GMT-0600 (Central Standard Time)
+[debug] [2018-03-10T17:43:14.239Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+
+[info] Shutting down...
