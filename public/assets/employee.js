@@ -7,15 +7,23 @@ $(function () {
         let currentEmp = snapshot.val();
         console.log(currentEmp);
         
-        var newRow = $("<tr>");
-        var currentName = $(".name").text(currentEmp.name);
-        var currentRole = $(".role").text(currentEmp.role);
-        var currentStart = $(".start").text(currentEmp.start);
-        var currentMonth = $(".months");
-        var currentRate = $(".rate").text(currentEmp.rate);
-        var currentBill = $(".billed");
-        newRow.append(currentName).append(currentRole).append(currentStart).append(currentMonth).append(currentRate).append(currentBill);
+        var newRow = $("<tr class='tableRow'>");
+        var currentName = $("<td class='name'>").text(currentEmp.name);
+        var currentRole = $("<td class='role'>").text(currentEmp.role);
+        var currentStart = $("<td class='start'>").text(currentEmp.start);
+        var currentMonth = $("<td class='months'>");
+        var currentRate = $("<td class='rate'>").text(currentEmp.rate);
+        var currentBill = $("<td class='billed'>");
+        
+        newRow.append(currentName)
+            .append(currentRole)
+            .append(currentStart)
+            .append(currentMonth)
+            .append(currentRate)
+            .append(currentBill);
+        
         $("tbody").append(newRow);
+        
         })
         
         $("form").off("submit").on("submit", function (e) {
